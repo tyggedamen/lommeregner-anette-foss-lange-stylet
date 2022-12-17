@@ -1,0 +1,56 @@
+.container{
+
+    background-color: white;
+    max-width: 300px;
+
+    display: grid;
+    
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+    grid-template-columns: repeat( 4, 1fr);
+    margin: auto;
+    padding: 30px;
+}
+
+    
+#screen {
+    /* grid-column: 1/ -1;   Det er ikke forkert nogle af eksemplerne, her viser den start ved 1 og slut ved -1 */ 
+
+    grid-column: span 4;
+    cursor: default;
+    /* i stedet for default, kan man bruge pointer og få hånden frem */
+    text-align: right;
+    height: 40px;
+    background-color: lightcoral;
+    color: white;
+    font-size: larger;
+}
+.calculator-button {
+    aspect-ratio: 1 ;
+    /* viser størrelsen på knapperne */
+background-color: indianred;
+border: 2px, solid;
+color: rgb(249, 244, 244);
+font-size: 3em;
+border-radius: 50%;
+border-color: darkgreen;
+}
+
+#divide-button {
+    background-color: darkseagreen;
+}
+#times-button {
+    background-color: darkolivegreen;
+}
+#subtract-button {
+    background-color: darkgoldenrod;
+}
+#equal-button {
+    background-color: darkkhaki;
+}
+#plus-button {
+    background-color: chocolate;
+}
+#clear-button {
+    background-color: crimson;
+}
